@@ -4,36 +4,51 @@ import './Skills.css'
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML', icon: '/assets/html.png', level: 90 },
-    { name: 'CSS', icon: '/assets/css.png', level: 85 },
-    { name: 'JavaScript', icon: '/assets/javascript.png', level: 80 },
-    { name: 'Python', icon: '/assets/python.png', level: 75 },
-    { name: 'Node.js', icon: '/assets/nodejs.png', level: 70 },
-    { name: 'MongoDB', icon: '/assets/mongodb.png', level: 65 },
-    { name: 'UI/UX', icon: '/assets/uiux.png', level: 80 },
-    { name: 'Power BI', icon: '/assets/powerbi.jpeg', level: 70 }
+    'HTML',
+    'CSS', 
+    'UI/UX Design',
+    'Data Analytics',
+    'MySQL',
+    'Python',
+    'ReactJs',
+    'MongoDB',
+    'Java',
+  ]
+
+  const tools = [
+    'Git',
+    'Figma',
+    'PowerBI',
+    'Illustrator'
   ]
 
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-title">Skills & Technologies</h2>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div key={skill.name} className="skill-card" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="skill-icon">
-                <img src={skill.icon} alt={skill.name} />
-              </div>
-              <h3>{skill.name}</h3>
-              <div className="skill-progress">
-                <div 
-                  className="skill-progress-bar"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-              <span className="skill-percentage">{skill.level}%</span>
+        <h2 className="section-title">Skills & Tools</h2>
+        
+        <div className="skills-tools-container">
+          <div className="skills-section">
+            <h3 className="subsection-title">Skills</h3>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <div key={skill} className="skill-card" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <span>{skill}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div className="tools-section">
+            <h3 className="subsection-title">Tools</h3>
+            <div className="skills-grid">
+              {tools.map((tool, index) => (
+                <div key={tool} className="skill-card" style={{ animationDelay: `${(index + skills.length) * 0.1}s` }}>
+                  <span>{tool}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

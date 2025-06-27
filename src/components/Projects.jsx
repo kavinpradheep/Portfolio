@@ -73,7 +73,7 @@ const Projects = () => {
       description: 'A browser-based Tic Tac Toe game using HTML, CSS, and JavaScript. Two players alternate turns marking "X" or "O" on a 3x3 grid. JavaScript handles the game logic, checking for wins or draws.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/kavinpradheep/Tic-Tac-Toe-Game-.git',
-      live: '#',
+      live: 'https://kavinpradheep.github.io/Tic-Tac-Toe-Game-/',
       category: 'Game Development'
     }
   ]

@@ -6,28 +6,28 @@ const Footer = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Tools', href: '#tools' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' }
-    
   ]
 
   const contactInfo = [
     {
       icon: '📧',
-      label: 'Email',
-      value: 'kavinpradheep@example.com',
-      link: 'mailto:kavinpradheep@example.com'
+      label: 'Email:',
+      value: 'kavinpradheep8@gmail.com',
+      link: 'mailto:kavinpradheep8@gmail.com'
     },
     {
       icon: '📱',
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      label: 'Phone : ',
+      value: '6369960824',
+      link: 'tel:+916369960824'
     },
     {
       icon: '📍',
-      label: 'Location',
-      value: 'Chennai, India',
+      label: 'Location:',
+      value: ' Tiruppur, India',
       link: null
     }
   ]
