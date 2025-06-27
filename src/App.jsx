@@ -7,6 +7,7 @@ import Resume from './components/Resume'
 import Footer from './components/Footer'
 import Certifications from './components/Certifications'
 import './App.css'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
@@ -30,17 +31,19 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Header activeSection={activeSection} />
-      <main>
-        <About />
-        <Skills />
-        <Projects />
-        <Certifications />
-        <Resume />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Header activeSection={activeSection} />
+        <main>
+          <About />
+          <Skills />
+          <Projects />
+          <Certifications />
+          <Resume />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
 

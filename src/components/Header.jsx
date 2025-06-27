@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useTheme } from '../contexts/ThemeContext'
 import './Header.css'
 
 const Header = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { isDarkMode, toggleTheme } = useTheme()
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
@@ -14,7 +16,7 @@ const Header = ({ activeSection }) => {
       <div className="header-container">
         <div className="logo">
           <h1>Kavin Pradheep S T</h1>
-          <p>Full Stack Developer</p>
+          <p>FrontEnd & UIUX Developer</p>
         </div>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
@@ -29,17 +31,26 @@ const Header = ({ activeSection }) => {
           ))}
         </nav>
 
-        <button 
-          className="menu-toggle"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div className="header-controls">
+          <button 
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
+          
+          <button 
+            className="menu-toggle"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
   )
 }
-
 export default Header
