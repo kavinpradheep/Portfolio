@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Certifications from './components/Certifications'
 import './App.css'
 import { ThemeProvider } from './contexts/ThemeContext'
+import FloatingParticles from './components/FloatingParticles';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
@@ -33,6 +34,12 @@ function App() {
   return (
     <ThemeProvider>
       <div className="App">
+        <FloatingParticles 
+          particleCount={60}
+          particleColor="#64ffda"
+          particleSize={3}
+          speed={0.3}
+        />
         <Header activeSection={activeSection} />
         <main>
           <About />
