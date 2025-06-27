@@ -5,15 +5,55 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
-      title: 'MongoDB Associate Developer Examination',
+      title: 'MongoDB Associate Developer Certification',
       issuer: 'MongoDB Inc.',
-      date: 'May 2022',
-      expiryDate: 'May 2025',
+      date: 'January 2025',
+      expiryDate: 'January 2028',
       icon: '🍃',
-      badge: 'Active',
-      credentialId: 'MDB-DEV-2022-006',
-      description: 'Validates ability to build applications using MongoDB and demonstrates proficiency in MongoDB development.',
-      skills: ['MongoDB', 'Aggregation', 'Indexing', 'Schema Design']
+      badge: 'Certified',
+      credentialId: 'MDBwkl9sft01p',
+      description:
+        'Demonstrates expertise in building and deploying applications using MongoDB. Validates knowledge in schema design, CRUD operations, indexing, aggregation, and performance tuning.',
+      skills: ['MongoDB', 'CRUD Operations', 'Aggregation', 'Indexing', 'Schema Design']
+    },
+    {
+      id: 2,
+      title: 'Oracle Cloud Infrastructure 2024 Certified Foundations Associate',
+      issuer: 'Oracle',
+      date: 'January 2025',
+      expiryDate: 'N/A',
+      icon: '☁️',
+      badge: 'Certified',
+      credentialId: '316521152OCI2024FNDCFA',
+      description:
+        'Validates foundational knowledge of Oracle Cloud Infrastructure services, security, architecture, and core concepts essential for cloud adoption.',
+      skills: ['OCI', 'Cloud Fundamentals', 'Security', 'Infrastructure Services']
+    },
+    {
+      id: 3,
+      title: 'Privacy and Security in Online Social Media',
+      issuer: 'NPTEL (IIT)',
+      date: 'April 2024',
+      expiryDate: 'N/A',
+      icon: '🔐',
+      badge: 'Completed',
+      credentialId: 'NPTEL24CS04S1255401182',
+      description:
+        'Covers privacy, security, and policy concerns related to online social platforms. Includes encryption, anonymity, data leaks, and digital forensics.',
+      skills: ['Privacy', 'Security', 'Digital Forensics', 'Online Social Media']
+    },
+    {
+      id: 4,
+      title: 'Design & Implementation of Human-Computer Interfaces',
+      issuer: 'NPTEL (IIT)',
+      date: 'October 2024',
+      expiryDate: 'N/A',
+      icon: '🧠',
+      badge: 'Completed',
+      credentialId: 'NPTEL24CS126S851001696',
+      description:
+        'Explores usability, interaction design, and techniques to create user-centered systems. Evaluates HCI models and UI implementation approaches.',
+      skills: ['HCI', 'Usability', 'Interaction Design', 'User-Centered Design']
     }
   ];
 
@@ -49,10 +89,12 @@ const Certifications = () => {
                     <span className="date-label">Issued:</span>
                     <span className="date-value">{cert.date}</span>
                   </div>
-                  <div className="cert-expiry">
-                    <span className="date-label">Expires:</span>
-                    <span className="date-value">{cert.expiryDate}</span>
-                  </div>
+                  {cert.expiryDate !== 'N/A' && (
+                    <div className="cert-expiry">
+                      <span className="date-label">Expires:</span>
+                      <span className="date-value">{cert.expiryDate}</span>
+                    </div>
+                  )}
                 </div>
                 
                 <div className="cert-skills">
