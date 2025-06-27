@@ -3,6 +3,71 @@ import './Projects.css'
 
 const Projects = () => {
   const projects = [
+    
+    {
+      title: 'Web Saver App',
+      description: 'A simple Android app that allows users to save and open websites as app-like experiences using in-app WebView. Perfect for accessing frequently visited sites without cluttering the browser. Features clean UI, smooth performance, and works like an app browser for sites without official Android apps.',
+      technologies: ['React Native', 'Expo', 'AsyncStorage', 'React Navigation', 'WebView'],
+      github: 'https://github.com/kavinpradheep/WebSaverApp',
+      live: '#',
+      category: 'Mobile App'
+    },
+    {
+      title: 'EventEase',
+      description: 'A comprehensive event management web application developed as a team project to address issues faced by college clubs and associations in organizing and running events. Features event creation, management tools, and streamlined workflow for educational institutions.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Web Development', 'Team Collaboration'],
+      github: 'https://github.com/kavinpradheep/EVENTEASE2',
+      live: 'https://eventease-2.vercel.app/',
+      category: 'Web Application'
+    },
+    {
+      title: 'Aventuro\'25',
+      description: 'Official website for the ISTE Club event Aventuro\'25, featuring both technical and non-technical events. Implemented an interactive platform with event registration system, schedule management, and enhanced participant engagement features.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Event Management', 'Interactive Design'],
+      github: 'https://github.com/NKBharath/ISTE-AVENTURO-25',
+      live: 'https://kec-aventuro25.netlify.app/',
+      category: 'Event Platform'
+    },
+    {
+      title: 'BlinkIT Dashboard',
+      description: 'A responsive and interactive dashboard designed for BlinkIT to deliver real-time insights into sales performance. The dashboard helped uncover areas of improvement across product categories, enabling data-driven decision-making for increased operational efficiency and strategic planning.',
+      technologies: ['Power BI Desktop', 'DAX', 'Power Query', 'Data Analysis', 'Business Intelligence'],
+      github: 'https://github.com/kavinpradheep/BLINKIT-SALES-ANALYSIS',
+      live: 'https://app.powerbi.com/groups/me/reports/bd6c5711-3bd4-4d67-9e57-43a14a77a551/f0fe1b726cf4dcde8c05?experience=power-bi',
+      category: 'Data Analysis'
+    },
+    {
+      title: 'SkillX - UI/UX Design',
+      description: 'A comprehensive UI/UX design for SkillX, a skill exchange platform showcased at the Product Expo. Features intuitive interface design, secure profile system, smart skill-matching, and responsive layout for peer-to-peer learning and collaboration.',
+      technologies: ['Figma', 'UI/UX Design', 'Prototyping', 'Auto Layout', 'Design System'],
+      github: 'https://github.com/kavinpradheep/Skill-X',
+      live: 'https://www.figma.com/design/bfYQSe6ZI3Y08YRRGx271D/product_expo?node-id=0-1&t=RGYAK06qtLhwzm1Y-1',
+      category: 'UI/UX Design'
+    },
+    {
+      title: 'Online Quiz Platform - UI/UX Design',
+      description: 'Interactive UI/UX design for an online quiz conducting platform with MERN stack architecture. Features admin controls for quiz creation, real-time player participation using unique codes, automated scoring, and dynamic leaderboards with responsive design.',
+      technologies: ['Figma', 'UI/UX Design', 'Prototyping', 'Responsive Design', 'MERN Stack Design'],
+      github: 'https://github.com/kavinpradheep/QuizCraft',
+      live: 'https://www.figma.com/design/jJdcxkUbm5AtgyBcTWCdi5/MernStack?node-id=0-1&t=pPgSebDlx8ykZ2nL-1',
+      category: 'UI/UX Design'
+    },
+    {
+      title: 'Bearing Fault Detection System',
+      description: 'A comprehensive web application for detecting faults in bearing components using deep learning models. Features dual model analysis with LSTM and CNN-LSTM networks, real-time visualization, and comprehensive diagnostics for industrial applications.',
+      technologies: ['Python', 'TensorFlow', 'Streamlit', 'MongoDB', 'Machine Learning', 'Deep Learning'],
+      github: 'https://github.com/kavinpradheep/Bearing-Fault-Detection',
+      live: 'https://bearing-fault-detection.streamlit.app/',
+      category: 'Machine Learning'
+    },
+    {
+      title: 'Personal Portfolio',
+      description: 'A modern, responsive personal portfolio website built with React. Features smooth animations, dark/light theme toggle, interactive sections, and optimized performance. Showcases projects, skills, and professional experience.',
+      technologies: ['React', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations'],
+      github: 'https://github.com/kavinpradheep/portfolio',
+      live: 'https://kavinpradheepst-portfolio.netlify.app/',
+      category: 'Portfolio'
+    },
     {
       title: 'Tic-Tac-Toe Game',
       description: 'A browser-based Tic Tac Toe game using HTML, CSS, and JavaScript. Two players alternate turns marking "X" or "O" on a 3x3 grid. JavaScript handles the game logic, checking for wins or draws.',
@@ -10,70 +75,6 @@ const Projects = () => {
       github: 'https://github.com/kavinpradheep/Tic-Tac-Toe-Game-.git',
       live: '#',
       category: 'Game Development'
-    },
-    {
-      title: 'Certificate Generator',
-      description: 'A ReactJS-based certificate generator that allows users to input details like name, course, and date to create custom certificates. Features PDF download functionality and customizable templates.',
-      technologies: ['React', 'JavaScript', 'CSS', 'PDF Generation'],
-      github: 'https://github.com/kavinpradheep/Certificate-Generator.git',
-      live: '#',
-      category: 'Web Application'
-    },
-    {
-      title: 'YouTube Frontend Clone',
-      description: 'A pixel-perfect YouTube frontend clone using HTML and CSS that replicates the layout and design of YouTube\'s homepage. Features responsive interface with video thumbnails, sidebar navigation, and modern UI components.',
-      technologies: ['HTML', 'CSS', 'Responsive Design', 'UI/UX'],
-      github: 'https://github.com/kavinpradheep/Youtube-clone-project.git',
-      live: '#',
-      category: 'Frontend Clone'
-    },
-    {
-      title: 'Personal Portfolio',
-      description: 'A modern, responsive personal portfolio website built with React. Features smooth animations, dark/light theme toggle, interactive sections, and optimized performance. Showcases projects, skills, and professional experience.',
-      technologies: ['React', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations'],
-      github: 'https://github.com/kavinpradheep/portfolio',
-      live: '#',
-      category: 'Portfolio'
-    },
-    {
-      title: 'Weather App',
-      description: 'A dynamic weather application that provides real-time weather information for any city worldwide. Features current weather conditions, 5-day forecast, and beautiful weather animations with API integration.',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'Weather API', 'Fetch API'],
-      github: 'https://github.com/kavinpradheep/weather-app',
-      live: '#',
-      category: 'Web Application'
-    },
-    {
-      title: 'Task Management System',
-      description: 'A comprehensive task management application with CRUD operations, priority levels, due dates, and category filtering. Built with modern JavaScript and local storage for data persistence.',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'Local Storage', 'DOM Manipulation'],
-      github: 'https://github.com/kavinpradheep/task-manager',
-      live: '#',
-      category: 'Productivity Tool'
-    },
-    {
-      title: 'Restaurant Landing Page',
-      description: 'An elegant restaurant landing page featuring modern design, smooth scrolling, image galleries, menu sections, and contact forms. Fully responsive with CSS Grid and Flexbox layout.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'CSS Grid'],
-      github: 'https://github.com/kavinpradheep/restaurant-landing',
-      live: '#',
-      category: 'Landing Page'
-    },
-    {
-      title: 'Calculator App',
-      description: 'A feature-rich calculator application with standard arithmetic operations, memory functions, and keyboard support. Clean interface with smooth animations and comprehensive error handling.',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'Mathematical Operations'],
-      github: 'https://github.com/kavinpradheep/calculator',
-      live: '#',
-      category: 'Utility App'
-    },
-    {
-      title: 'E-commerce Product Showcase',
-      description: 'A modern e-commerce product showcase with product filtering, search functionality, shopping cart, and responsive design. Features product details modal and smooth transitions throughout.',
-      technologies: ['React', 'JavaScript', 'CSS', 'State Management', 'Responsive Design'],
-      github: 'https://github.com/kavinpradheep/ecommerce-showcase',
-      live: '#',
-      category: 'E-commerce'
     }
   ]
 
