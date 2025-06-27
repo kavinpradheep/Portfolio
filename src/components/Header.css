@@ -60,7 +60,7 @@
 .nav {
   display: flex;
   gap: 2rem;
-  margin-left: 2rem;
+  margin-left: 6rem;
 }
 
 .nav-link {

@@ -4,7 +4,7 @@
 
 .certifications {
   padding: 6rem 0;
-  background: var(--bg-secondary);
+  background: white;
 }
 
 .certifications-header {
@@ -91,7 +91,10 @@
 }
 
 .cert-content {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 200px);
 }
 
 .cert-header {
@@ -155,7 +158,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: auto;
 }
 
 .skill-tag {
@@ -176,35 +179,28 @@
 
 .cert-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1.5rem 2rem;
   border-top: 1px solid rgba(var(--border-rgb), 0.1);
+  margin-top: auto;
+  background: rgba(var(--primary-rgb), 0.02);
 }
 
 .credential-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  display: none;
 }
 
 .credential-label {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  display: none;
 }
 
 .credential-id {
-  font-size: 0.9rem;
-  color: var(--text-primary);
-  font-weight: 600;
-  font-family: 'Courier New', monospace;
+  display: none;
 }
 
 .cert-action {
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   background: var(--primary-color);
   color: white;
   text-decoration: none;
@@ -212,11 +208,9 @@
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-}
-
-.cert-action:hover {
-  background: var(--accent-color);
-  transform: translateY(-2px);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* ======================

@@ -11,7 +11,7 @@ const Certifications = () => {
       expiryDate: 'January 2028',
       icon: '🍃',
       badge: 'Certified',
-      credentialId: 'MDBwkl9sft01p',
+      certificateUrl: '/assets/mongodb-certificate.pdf',
       description:
         'Demonstrates expertise in building and deploying applications using MongoDB. Validates knowledge in schema design, CRUD operations, indexing, aggregation, and performance tuning.',
       skills: ['MongoDB', 'CRUD Operations', 'Aggregation', 'Indexing', 'Schema Design']
@@ -24,7 +24,7 @@ const Certifications = () => {
       expiryDate: 'N/A',
       icon: '☁️',
       badge: 'Certified',
-      credentialId: '316521152OCI2024FNDCFA',
+      certificateUrl: '/assets/oracle-oci-certificate.pdf',
       description:
         'Validates foundational knowledge of Oracle Cloud Infrastructure services, security, architecture, and core concepts essential for cloud adoption.',
       skills: ['OCI', 'Cloud Fundamentals', 'Security', 'Infrastructure Services']
@@ -37,7 +37,7 @@ const Certifications = () => {
       expiryDate: 'N/A',
       icon: '🔐',
       badge: 'Completed',
-      credentialId: 'NPTEL24CS04S1255401182',
+      certificateUrl: '/assets/nptel-privacy-security-certificate.pdf',
       description:
         'Covers privacy, security, and policy concerns related to online social platforms. Includes encryption, anonymity, data leaks, and digital forensics.',
       skills: ['Privacy', 'Security', 'Digital Forensics', 'Online Social Media']
@@ -50,7 +50,7 @@ const Certifications = () => {
       expiryDate: 'N/A',
       icon: '🧠',
       badge: 'Completed',
-      credentialId: 'NPTEL24CS126S851001696',
+      certificateUrl: '/assets/nptel-hci-certificate.pdf',
       description:
         'Explores usability, interaction design, and techniques to create user-centered systems. Evaluates HCI models and UI implementation approaches.',
       skills: ['HCI', 'Usability', 'Interaction Design', 'User-Centered Design']
@@ -104,11 +104,14 @@ const Certifications = () => {
                 </div>
                 
                 <div className="cert-footer">
-                  <div className="credential-info">
-                    <span className="credential-label">Credential ID:</span>
-                    <span className="credential-id">{cert.credentialId}</span>
-                  </div>
-                  <a href="#" className="cert-action">Verify</a>
+                  <a 
+                    href={cert.certificateUrl} 
+                    className="cert-action"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    📄 View Certificate
+                  </a>
                 </div>
               </div>
             </div>
