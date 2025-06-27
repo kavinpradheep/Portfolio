@@ -4,14 +4,14 @@ import './Skills.css'
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML', icon: '/src/assets/html.png', level: 90 },
-    { name: 'CSS', icon: '/src/assets/css.png', level: 85 },
-    { name: 'JavaScript', icon: '/src/assets/javascript.png', level: 80 },
-    { name: 'Python', icon: '/src/assets/python.png', level: 75 },
-    { name: 'Node.js', icon: '/src/assets/nodejs.png', level: 70 },
-    { name: 'MongoDB', icon: '/src/assets/mongodb.png', level: 65 },
-    { name: 'UI/UX', icon: '/src/assets/uiux.png', level: 80 },
-    { name: 'Power BI', icon: '/src/assets/powerbi.jpeg', level: 70 }
+    { name: 'HTML', icon: '/assets/html.png', level: 90 },
+    { name: 'CSS', icon: '/assets/css.png', level: 85 },
+    { name: 'JavaScript', icon: '/assets/javascript.png', level: 80 },
+    { name: 'Python', icon: '/assets/python.png', level: 75 },
+    { name: 'Node.js', icon: '/assets/nodejs.png', level: 70 },
+    { name: 'MongoDB', icon: '/assets/mongodb.png', level: 65 },
+    { name: 'UI/UX', icon: '/assets/uiux.png', level: 80 },
+    { name: 'Power BI', icon: '/assets/powerbi.jpeg', level: 70 }
   ]
 
   return (
