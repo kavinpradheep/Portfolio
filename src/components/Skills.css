@@ -1,6 +1,6 @@
 .skills {
   padding: 4rem 0;
-  background: white;
+  background: var(--bg-secondary);
   position: relative;
   overflow: hidden;
 }
@@ -102,7 +102,7 @@
 }
 
 .skill-card {
-  background: rgba(var(--primary-rgb), 0.05);
+  background: var(--bg-primary);
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   border: 2px solid rgba(var(--primary-rgb), 0.1);
@@ -133,7 +133,7 @@
 .skill-card:hover {
   transform: translateY(-3px) scale(1.05);
   border-color: var(--primary-color);
-  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), rgba(var(--accent-rgb), 0.1));
+  background: var(--bg-secondary);
   box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.2);
 }
 

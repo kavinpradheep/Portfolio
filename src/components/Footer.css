@@ -3,7 +3,7 @@
    ====================== */
 
 .footer {
-  background: white;
+  background: var(--bg-secondary);
   position: relative;
   overflow: hidden;
   margin-top: 8rem;
@@ -205,7 +205,7 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1.2rem;
-  background: #f8f9fa;
+  background: var(--bg-primary);
   border-left: 4px solid var(--primary-color);
   border-radius: 0 12px 12px 0;
   transition: all 0.3s ease;
@@ -266,7 +266,7 @@
   border-top: 1px solid rgba(var(--border-rgb), 0.2);
   padding-top: 2.5rem;
   text-align: center;
-  background: #f8f9fa;
+  background: var(--bg-primary);
   margin: 0 -2rem -2rem;
   padding-left: 2rem;
   padding-right: 2rem;
