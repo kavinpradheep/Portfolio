@@ -23,12 +23,6 @@ const Footer = () => {
       label: 'Phone : ',
       value: '6369960824',
       link: 'tel:+916369960824'
-    },
-    {
-      icon: '📍',
-      label: 'Location:',
-      value: ' Tiruppur, India',
-      link: null
     }
   ]
 
@@ -37,7 +31,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section footer-brand">
-            <h3 className="footer-logo">Kavin Pradheep</h3>
+            <h3 className="footer-logo">Kavin Pradheep S T</h3>
             <p className="footer-tagline">
               Full Stack Developer & UI/UX Enthusiast
             </p>
