@@ -1,19 +1,8 @@
 .skills {
   padding: 4rem 0;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   position: relative;
   overflow: hidden;
-}
-
-.skills::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(45deg, transparent, rgba(var(--primary-rgb), 0.03), transparent);
-  animation: shimmer 3s ease-in-out infinite;
 }
 
 .container {
@@ -34,7 +23,7 @@
 
 .skills-section,
 .tools-section {
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -133,7 +122,7 @@
 .skill-card:hover {
   transform: translateY(-3px) scale(1.05);
   border-color: var(--primary-color);
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.2);
 }
 
