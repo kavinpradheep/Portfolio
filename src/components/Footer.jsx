@@ -20,7 +20,7 @@ const Footer = () => {
     },
     {
       icon: '📱',
-      label: 'Phone : ',
+      label: 'Phone:',
       value: '6369960824',
       link: 'tel:+916369960824'
     }
