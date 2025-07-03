@@ -9,7 +9,7 @@ const Projects = () => {
       description: 'A simple Android app that allows users to save and open websites as app-like experiences using in-app WebView. Perfect for accessing frequently visited sites without cluttering the browser. Features clean UI, smooth performance, and works like an app browser for sites without official Android apps.',
       technologies: ['React Native', 'Expo', 'AsyncStorage', 'React Navigation', 'WebView'],
       github: 'https://github.com/kavinpradheep/WebSaverApp',
-      live: '#',
+      live: 'https://drive.google.com/file/d/1MBGkvNorvmwGn2k9A0txTO21TN2fbV-E/view?usp=sharing',
       category: 'Mobile App'
     },
     {
