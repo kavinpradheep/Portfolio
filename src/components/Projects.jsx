@@ -29,12 +29,12 @@ const Projects = () => {
       category: 'Event Platform'
     },
     {
-      title: 'BlinkIT Dashboard',
-      description: 'A responsive and interactive dashboard designed for BlinkIT to deliver real-time insights into sales performance. The dashboard helped uncover areas of improvement across product categories, enabling data-driven decision-making for increased operational efficiency and strategic planning.',
-      technologies: ['Power BI Desktop', 'DAX', 'Power Query', 'Data Analysis', 'Business Intelligence'],
-      github: 'https://github.com/kavinpradheep/BLINKIT-SALES-ANALYSIS',
-      live: 'https://app.powerbi.com/groups/me/reports/bd6c5711-3bd4-4d67-9e57-43a14a77a551/f0fe1b726cf4dcde8c05?experience=power-bi',
-      category: 'Data Analysis'
+      title: 'Web Saver App - UI/UX Design',
+      description: 'A detailed UI/UX design for the Web Saver App, focusing on user-friendly navigation, intuitive interface, and seamless user experience. Includes wireframes, prototypes, and design system for consistent branding.',
+      technologies: ['Figma', 'UI/UX Design', 'Prototyping', 'Wireframes', 'Design System'],
+      github: 'https://github.com/kavinpradheep/WebSaverApp-UIUX',
+      live: 'https://www.figma.com/design/pqtJWLc2oHN8nKhWFBOE9x/Untitled?node-id=0-1&p=f&t=bq7MOVLBDKQm3CuB-0',
+      category: 'UI/UX Design'
     },
     {
       title: 'SkillX - UI/UX Design',
@@ -53,6 +53,14 @@ const Projects = () => {
       category: 'UI/UX Design'
     },
     {
+      title: 'BlinkIT Dashboard',
+      description: 'A responsive and interactive dashboard designed for BlinkIT to deliver real-time insights into sales performance. The dashboard helped uncover areas of improvement across product categories, enabling data-driven decision-making for increased operational efficiency and strategic planning.',
+      technologies: ['Power BI Desktop', 'DAX', 'Power Query', 'Data Analysis', 'Business Intelligence'],
+      github: 'https://github.com/kavinpradheep/BLINKIT-SALES-ANALYSIS',
+      live: 'https://app.powerbi.com/groups/me/reports/bd6c5711-3bd4-4d67-9e57-43a14a77a551/f0fe1b726cf4dcde8c05?experience=power-bi',
+      category: 'Data Analysis'
+    },
+    {
       title: 'Bearing Fault Detection System',
       description: 'A comprehensive web application for detecting faults in bearing components using deep learning models. Features dual model analysis with LSTM and CNN-LSTM networks, real-time visualization, and comprehensive diagnostics for industrial applications.',
       technologies: ['Python', 'TensorFlow', 'Streamlit', 'MongoDB', 'Machine Learning', 'Deep Learning'],
@@ -67,14 +75,6 @@ const Projects = () => {
       github: 'https://github.com/kavinpradheep/portfolio',
       live: 'https://kavinpradheepst-portfolio.netlify.app/',
       category: 'Portfolio'
-    },
-    {
-      title: 'Tic-Tac-Toe Game',
-      description: 'A browser-based Tic Tac Toe game using HTML, CSS, and JavaScript. Two players alternate turns marking "X" or "O" on a 3x3 grid. JavaScript handles the game logic, checking for wins or draws.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/kavinpradheep/Tic-Tac-Toe-Game-.git',
-      live: 'https://kavinpradheep.github.io/Tic-Tac-Toe-Game-/',
-      category: 'Game Development'
     }
   ]
 

@@ -186,7 +186,13 @@
 
 .project-link.github {
   background: var(--text-primary);
-  color: white;
+  color: var(--bg-primary); /* Default text color for light mode */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .project-link.github {
+  background: var(--bg-secondary); /* Adjust background for dark mode */
+  color: var(--text-primary); /* Adjust text color for dark mode */
 }
 
 .project-link.live {
