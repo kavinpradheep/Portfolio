@@ -16,7 +16,7 @@ const Header = ({ activeSection }) => {
       <div className="header-container">
         <div className="logo">
           <h1>Kavin Pradheep S T</h1>
-          <p>FrontEnd & UIUX Developer</p>
+          <p>FrontEnd & UIUX Designer</p>
         </div>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
@@ -53,4 +53,6 @@ const Header = ({ activeSection }) => {
     </header>
   )
 }
+
 export default Header
+

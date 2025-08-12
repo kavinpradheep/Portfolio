@@ -3,12 +3,11 @@ import './Footer.css'
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Tools', href: '#tools' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Certifications', href: '#certifications' },
-    { name: 'Projects', href: '#projects' }
+    { name: 'Resume', href: '#resume' }
   ]
 
   const contactInfo = [
@@ -33,7 +32,7 @@ const Footer = () => {
           <div className="footer-section footer-brand">
             <h3 className="footer-logo">Kavin Pradheep S T</h3>
             <p className="footer-tagline">
-              Full Stack Developer & UI/UX Enthusiast
+              Front-End Developer & UI/UX Enthusiast
             </p>
             <p className="footer-description">
               Passionate about creating innovative web solutions and bringing ideas to life through clean, efficient code.

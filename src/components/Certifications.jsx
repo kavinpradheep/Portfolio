@@ -18,19 +18,6 @@ const Certifications = () => {
     },
     {
       id: 2,
-      title: 'Oracle Cloud Infrastructure 2024 Certified Foundations Associate',
-      issuer: 'Oracle',
-      date: 'January 2025',
-      expiryDate: 'N/A',
-      icon: '☁️',
-      badge: 'Certified',
-      certificateUrl: '/assets/oracle-oci-certificate.pdf',
-      description:
-        'Validates foundational knowledge of Oracle Cloud Infrastructure services, security, architecture, and core concepts essential for cloud adoption.',
-      skills: ['OCI', 'Cloud Fundamentals', 'Security', 'Infrastructure Services']
-    },
-    {
-      id: 3,
       title: 'Privacy and Security in Online Social Media',
       issuer: 'NPTEL (IIT)',
       date: 'April 2024',
@@ -43,7 +30,7 @@ const Certifications = () => {
       skills: ['Privacy', 'Security', 'Digital Forensics', 'Online Social Media']
     },
     {
-      id: 4,
+      id: 3,
       title: 'Design & Implementation of Human-Computer Interfaces',
       issuer: 'NPTEL (IIT)',
       date: 'October 2024',
@@ -60,60 +47,30 @@ const Certifications = () => {
   return (
     <section id="certifications" className="certifications">
       <div className="container">
-        <div className="certifications-header">
-          <h2 className="section-title">My Certifications</h2>
-          <p className="section-subtitle">
-            Professional certifications and credentials that validate my expertise 
-            in various technologies and platforms.
-          </p>
-        </div>
+        <h2 className="section-title">Certifications</h2>
+        <p className="section-subtitle">
+          Professional certifications and achievements
+        </p>
         
         <div className="certifications-grid">
-          {certifications.map((cert) => (
-            <div key={cert.id} className="certification-card">
-              <div className="cert-image">
-                <div className="cert-badge">{cert.badge}</div>
-                <div className="cert-icon">{cert.icon}</div>
+          {certifications.map((cert, index) => (
+            <div key={index} className="certification-card">
+              <div className="certification-icon">
+                {cert.icon || '🏆'}
               </div>
-              
-              <div className="cert-content">
-                <div className="cert-header">
-                  <h3 className="cert-title">{cert.title}</h3>
-                  <p className="cert-issuer">{cert.issuer}</p>
-                </div>
-                
-                <p className="cert-description">{cert.description}</p>
-                
-                <div className="cert-dates">
-                  <div className="cert-date">
-                    <span className="date-label">Issued:</span>
-                    <span className="date-value">{cert.date}</span>
-                  </div>
-                  {cert.expiryDate !== 'N/A' && (
-                    <div className="cert-expiry">
-                      <span className="date-label">Expires:</span>
-                      <span className="date-value">{cert.expiryDate}</span>
-                    </div>
-                  )}
-                </div>
-                
-                <div className="cert-skills">
-                  {cert.skills.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-                
-                <div className="cert-footer">
-                  <a 
-                    href={cert.certificateUrl} 
-                    className="cert-action"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    📄 View Certificate
-                  </a>
-                </div>
-              </div>
+              <h3>{cert.title}</h3>
+              <p className="certification-issuer">{cert.issuer}</p>
+              {cert.date && <p className="certification-date">{cert.date}</p>}
+              {cert.certificateUrl && (
+                <a
+                  href={cert.certificateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certification-link"
+                >
+                  View Certificate
+                </a>
+              )}
             </div>
           ))}
         </div>

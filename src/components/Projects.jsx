@@ -73,7 +73,7 @@ const Projects = () => {
       description: 'A modern, responsive personal portfolio website built with React. Features smooth animations, dark/light theme toggle, interactive sections, and optimized performance. Showcases projects, skills, and professional experience.',
       technologies: ['React', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations'],
       github: 'https://github.com/kavinpradheep/portfolio',
-      live: 'https://kavinpradheepst-portfolio.netlify.app/',
+      live: 'https://kavinpradheep.tech/',
       category: 'Portfolio'
     }
   ]
