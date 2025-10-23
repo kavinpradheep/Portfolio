@@ -69,6 +69,14 @@ const Projects = () => {
       category: 'Machine Learning'
     },
     {
+    title: 'KEC Hostel Chatbot',
+    description: 'An AI-powered chatbot built using LangChain and RAG to answer hostel-related queries. Integrated HuggingFace embeddings, ChromaDB, and Gemini LLM, and deployed via Streamlit for an interactive student experience.',
+    technologies: ['Python', 'LangChain', 'HuggingFace', 'ChromaDB', 'Gemini LLM', 'Streamlit', 'RAG', 'NLP'],
+    github: 'https://github.com/kavinpradheep/HostelChatbot',
+    live: 'https://hostelchatbot.streamlit.app/',
+    category: 'AI & NLP'
+    },
+    {
       title: 'Personal Portfolio',
       description: 'A modern, responsive personal portfolio website built with React. Features smooth animations, dark/light theme toggle, interactive sections, and optimized performance. Showcases projects, skills, and professional experience.',
       technologies: ['React', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations'],
