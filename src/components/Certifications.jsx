@@ -16,32 +16,6 @@ const Certifications = () => {
         'Demonstrates expertise in building and deploying applications using MongoDB. Validates knowledge in schema design, CRUD operations, indexing, aggregation, and performance tuning.',
       skills: ['MongoDB', 'CRUD Operations', 'Aggregation', 'Indexing', 'Schema Design']
     },
-    {
-      id: 2,
-      title: 'Privacy and Security in Online Social Media',
-      issuer: 'NPTEL (IIT)',
-      date: 'April 2024',
-      expiryDate: 'N/A',
-      icon: '🔐',
-      badge: 'Completed',
-      certificateUrl: '/assets/nptel-privacy-security-certificate.pdf',
-      description:
-        'Covers privacy, security, and policy concerns related to online social platforms. Includes encryption, anonymity, data leaks, and digital forensics.',
-      skills: ['Privacy', 'Security', 'Digital Forensics', 'Online Social Media']
-    },
-    {
-      id: 3,
-      title: 'Design & Implementation of Human-Computer Interfaces',
-      issuer: 'NPTEL (IIT)',
-      date: 'October 2024',
-      expiryDate: 'N/A',
-      icon: '🧠',
-      badge: 'Completed',
-      certificateUrl: '/assets/nptel-hci-certificate.pdf',
-      description:
-        'Explores usability, interaction design, and techniques to create user-centered systems. Evaluates HCI models and UI implementation approaches.',
-      skills: ['HCI', 'Usability', 'Interaction Design', 'User-Centered Design']
-    }
   ];
 
   return (
@@ -51,7 +25,6 @@ const Certifications = () => {
         <p className="section-subtitle">
           Professional certifications and achievements
         </p>
-        
         <div className="certifications-grid">
           {certifications.map((cert, index) => (
             <div key={index} className="certification-card">
@@ -73,6 +46,21 @@ const Certifications = () => {
               )}
             </div>
           ))}
+          {/* Internship Completion Letter Card */}
+          <div className="certification-card">
+            <div className="certification-icon">📄</div>
+            <h3>Internship Completion Letter</h3>
+            <p className="certification-issuer">Imagivite</p>
+            <p className="certification-date">February 2026</p>
+            <a
+              href="/assets/Kavinpradheep_imagivite.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="certification-link"
+            >
+              View Letter
+            </a>
+          </div>
         </div>
       </div>
     </section>
